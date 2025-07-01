@@ -18,10 +18,6 @@ const Footer = () => {
                     <p className="text-muted-foreground mt-4 text-sm text-start">
                         Build beautiful, functional websites, without writing code
                     </p>
-                    <span className="mt-4 text-neutral-200 text-sm flex items-center">
-                        Made in India with
-                        <Heart className="w-3.5 h-3.5 ml-1 fill-primary text-primary" />
-                    </span>
                 </div>
 
                 <div className="grid-cols-2 gap-8 grid mt-16 xl:col-span-2 xl:mt-0">

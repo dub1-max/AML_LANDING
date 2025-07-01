@@ -1,13 +1,8 @@
 import { Container, Icons } from "@/components";
 import { buttonVariants } from "@/components/ui/button";
-import { UserButton, } from "@clerk/nextjs";
-import { currentUser } from "@clerk/nextjs/server";
 import Link from "next/link";
 
 const Navbar = async () => {
-
-    const user = await currentUser();
-
     return (
         <header className="px-4 h-14 sticky top-0 inset-x-0 w-full bg-background/40 backdrop-blur-lg border-b border-border z-50">
             <Container reverse>
@@ -29,18 +24,7 @@ const Navbar = async () => {
                         </ul>
                     </nav>
                     <div className="flex items-center gap-4">
-                        {user ? (
-                            <UserButton />
-                        ) : (
-                            <>
-                                <Link href="/sign-in" className={buttonVariants({ size: "sm", variant: "ghost" })}>
-                                    Login
-                                </Link>
-                                <Link href="/sign-up" className={buttonVariants({ size: "sm", className: "hidden md:flex" })}>
-                                    Start free trial
-                                </Link>
-                            </>
-                        )}
+                        {/* Removed sign-in and sign-up links for static site */}
                     </div>
                 </div>
             </Container>

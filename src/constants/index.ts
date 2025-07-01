@@ -2,11 +2,6 @@ import { Icons } from "@/components";
 
 export const perks = [
     {
-        icon: Icons.auth,
-        title: "Sign Up",
-        info: "Create your free account to get started with Astra.",
-    },
-    {
         icon: Icons.customize,
         title: "Customize",
         info: "Choose a template and customize it to fit your needs.",
@@ -16,6 +11,11 @@ export const perks = [
         title: "Launch",
         info: "Publish your website and share it with the world.",
     },
+    {
+        icon: Icons.customize,
+        title: "Customize",
+        info: "Choose a template and customize it to fit your needs.",
+    }
 ];
 
 export const features = [
