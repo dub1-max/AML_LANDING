@@ -45,12 +45,12 @@ const HomePage = () => {
                             Advanced KYC/AML Compliance Solution
                             </h1>
                             <p className="text-base md:text-lg text-foreground/80 mt-6 text-center">
-                            Screen your customers with speed and accuracy in an increasingly complex regulatory environment.ce.
+                            Screen your customers with speed and accuracy in an increasingly complex regulatory environment.
                             </p>
                             <div className="hidden md:flex relative items-center justify-center mt-8 md:mt-12 w-full">
                                 <Link href="#" className="flex items-center justify-center w-max rounded-full border-t border-foreground/30 bg-white/20 backdrop-blur-lg px-2 py-1 md:py-2 gap-2 md:gap-8 shadow-3xl shadow-background/40 cursor-pointer select-none">
                                     <p className="text-foreground text-sm text-center md:text-base font-medium pl-4 pr-4 lg:pr-0">
-                                        ✨ {"  "} Start building your dream website now!
+                                        ✨ {"  "} Secure Your Business with KYCSync
                                     </p>
                                     <Button size="sm" className="rounded-full hidden lg:flex border border-foreground/20">
                                         Get Started
@@ -60,11 +60,11 @@ const HomePage = () => {
                             </div>
                         </div>
 
-                        <div className="relative flex items-center py-10 md:py-20 w-full">
+                        {/*<div className="relative flex items-center py-10 md:py-20 w-full">
                             <div className="absolute top-1/2 left-1/2 -z-10 gradient w-3/4 -translate-x-1/2 h-3/4 -translate-y-1/2 inset-0 blur-[10rem]"></div>
                             <div className="-m-2 rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl">
                                 <Image
-                                    src="/assets/dashboard.svg"
+                                    //src="/assets/dashboard.svg"
                                     alt="banner image"
                                     width={1200}
                                     height={1200}
@@ -74,7 +74,7 @@ const HomePage = () => {
 
                                 <BorderBeam size={250} duration={12} delay={9} />
                             </div>
-                        </div>
+                        </div>*/}
                     </div>
                 </Container>
 
@@ -87,12 +87,12 @@ const HomePage = () => {
                                 From Idea to Launch <br /> Faster Than Ever
                             </h2>
                             <p className="text-muted-foreground mt-6 max-w-md mx-auto">
-                                Build stunning websites with AML&apos;s intuitive drag-and-drop builder and powerful AI assistant
+                                Secure Your Business with KYCSync
                             </p>
                             <Button variant="white" className="mt-6" asChild>
                                 <Link href="/sign-in">
-                                    Get started for free
-                                    <ArrowRight className="w-4 h-4 ml-2" />
+                                Get Started
+                                <ArrowRight className="w-4 h-4 ml-2" />
                                 </Link>
                             </Button>
                         </div>
