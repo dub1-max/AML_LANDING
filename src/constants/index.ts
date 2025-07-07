@@ -54,33 +54,43 @@ export const features = [
 export const pricingCards = [
     {
         title: "Starter",
-        description: "Perfect for trying out plura",
-        price: "Free",
-        duration: "",
-        highlight: "Key features",
-        buttonText: "Start for free",
-        features: ["Limited projects", "1 Team member", "Basic features"],
-        priceId: "",
+        description: "Up to 100 profiles\nAll prices are exclusive of VAT",
+        price: "200",
+        duration: "AED/Year",
+        highlight: "",
+        buttonText: "Get Started",
+        features: ["Up to 100 profiles", "All prices are exclusive of VAT"],
+        mostPopular: false,
     },
     {
-        title: "Unlimited Saas",
-        description: "The ultimate agency kit",
-        price: "$199",
-        duration: "month",
-        highlight: "Key features",
-        buttonText: "Upgrade to Pro",
-        features: ["Unlimited projects", "5 Team members", "Advanced design tools", "Customizable domain"],
-        priceId: "price_1OYxkqFj9oKEERu1KfJGWxgN",
+        title: "Essential",
+        description: "Up to 250 profiles\nAll prices are exclusive of VAT",
+        price: "500",
+        duration: "AED/Year",
+        highlight: "Most Popular",
+        buttonText: "Get Started",
+        features: ["Up to 250 profiles", "All prices are exclusive of VAT"],
+        mostPopular: true,
     },
     {
-        title: "Enterprise",
-        description: "For serious agency owners",
-        price: "$399",
-        duration: "month",
-        highlight: "Everything in Starter, plus",
-        buttonText: "Upgrade to Enterprise",
-        features: ["Unlimited projects", "Unlimited Team members", "Custom branding", "Priority support (24/7)"],
-        priceId: "price_1OYxkqFj9oKEERu1NbKUxXxN",
+        title: "Business",
+        description: "Up to 500 profiles\nAll prices are exclusive of VAT",
+        price: "1,000",
+        duration: "AED/Year",
+        highlight: "",
+        buttonText: "Get Started",
+        features: ["Up to 500 profiles", "All prices are exclusive of VAT"],
+        mostPopular: false,
+    },
+    {
+        title: "Corporate",
+        description: "Up to 750 profiles\nAll prices are exclusive of VAT",
+        price: "1,500",
+        duration: "AED/Year",
+        highlight: "",
+        buttonText: "Get Started",
+        features: ["Up to 750 profiles", "All prices are exclusive of VAT"],
+        mostPopular: false,
     },
 ];
 
@@ -143,3 +153,85 @@ export const reviews = [
         body: "I'm at a loss for words. This is amazing. I love it.",
     },
 ];
+
+export const keyFeatures = [
+    {
+        icon: Icons.bolt,
+        title: "Seal Verification",
+        info: "The KYCSync Verified Seal helps you showcase the credibility of your business by highlighting that you are fulfilling AML/KYC regulations.",
+    },
+    {
+        icon: Icons.database,
+        title: "Risk Assessment",
+        info: "Comprehensive individual and business risk assessment to identify potential compliance issues.",
+    },
+    {
+        icon: Icons.bell,
+        title: "Ongoing Monitoring",
+        info: "Continuous screening and monitoring with alerts for any changes in customer status or risk profile.",
+    },
+    {
+        icon: Icons.search,
+        title: "Global Database Screening",
+        info: "Screen against global sanctions lists, PEP databases, and adverse media to identify high-risk individuals.",
+    },
+    {
+        icon: Icons.monitor,
+        title: "Digital Onboarding",
+        info: "Streamlined digital onboarding process with automated document verification and biometric checks.",
+    },
+    {
+        icon: Icons.lock,
+        title: "Secure Data Management",
+        info: "Secure storage and handling of customer data in compliance with data protection regulations.",
+    },
+];
+
+export const aboutStats = [
+    { value: "1200+", label: "Satisfied Clients" },
+    { value: "100+", label: "Sanction Lists" },
+    { value: "24/7", label: "Support" },
+];
+
+export const complianceCards = [
+    {
+        title: "National Oversight",
+        info: "The National Committee for Combating Money Laundering and the Financing of Terrorism and Illegal Organizations (NAMLCFTC) oversees the national risk assessment process.",
+    },
+    {
+        title: "New Regulations",
+        info: "As per the recent AML-CFT Act of Parliament, the UAE has introduced new regulations regarding digital ID for Customer Due Diligence (CDD).",
+    },
+    {
+        title: "Regulatory Framework",
+        info: "Effective navigation and implementation of Anti-Money Laundering (AML) and Know Your Customer (KYC) compliance in the UAE, calls for the thorough understanding of the regulatory...",
+    },
+];
+
+export const solutions = [
+    {
+        icon: Icons.user,
+        title: "Individual Verification",
+        info: "Comprehensive identity verification for individuals using advanced biometric and document verification technology.",
+    },
+    {
+        icon: Icons.server,
+        title: "Business Verification",
+        info: "Complete business verification including ownership structure, UBO identification, and corporate document verification.",
+    },
+    {
+        icon: Icons.palette,
+        title: "Customizable Workflows",
+        info: "Flexible and customizable verification workflows to match your specific business requirements.",
+    },
+    {
+        icon: Icons.shield,
+        title: "Regulatory Compliance",
+        info: "Stay compliant with UAE regulations including AML, KYC, and data protection requirements.",
+    },
+];
+
+export const contactInfo = {
+    email: "kycbox@gmail.com",
+    address: "Dubai, United Arab Emirates",
+};
