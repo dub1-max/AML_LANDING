@@ -55,7 +55,7 @@ export const pricingCards = [
     {
         title: "Starter",
         description: "Up to 100 profiles\nAll prices are exclusive of VAT",
-        price: "200",
+        price: "200 AED",
         duration: "AED/Year",
         highlight: "",
         buttonText: "Get Started",
@@ -65,7 +65,7 @@ export const pricingCards = [
     {
         title: "Essential",
         description: "Up to 250 profiles\nAll prices are exclusive of VAT",
-        price: "500",
+        price: "500 AED",
         duration: "AED/Year",
         highlight: "Most Popular",
         buttonText: "Get Started",
@@ -75,7 +75,7 @@ export const pricingCards = [
     {
         title: "Business",
         description: "Up to 500 profiles\nAll prices are exclusive of VAT",
-        price: "1,000",
+        price: "1,000 AED",
         duration: "AED/Year",
         highlight: "",
         buttonText: "Get Started",
@@ -85,7 +85,7 @@ export const pricingCards = [
     {
         title: "Corporate",
         description: "Up to 750 profiles\nAll prices are exclusive of VAT",
-        price: "1,500",
+        price: "1,500 AED",
         duration: "AED/Year",
         highlight: "",
         buttonText: "Get Started",
@@ -232,6 +232,6 @@ export const solutions = [
 ];
 
 export const contactInfo = {
-    email: "kycbox@gmail.com",
+    email: "support.kycsync@gmail.com",
     address: "Dubai, United Arab Emirates",
 };

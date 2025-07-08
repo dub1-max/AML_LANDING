@@ -8,7 +8,7 @@ import Marquee from "@/components/ui/marquee";
 import SectionBadge from "@/components/ui/section-badge";
 import { features, perks, pricingCards, reviews, aboutStats, keyFeatures, complianceCards, solutions, contactInfo } from "@/constants";
 import { cn } from "@/lib/utils";
-import { ArrowRight, ChevronRight, UserIcon, Zap, Mail, MapPin, Bolt, Database, Bell, Search, Monitor, Lock, User, Server, Palette, ShieldCheck } from "lucide-react";
+import { ArrowRight, ChevronRight, UserIcon, Zap, Mail, MapPin, Shield, Database, Bell, Search, Monitor, Lock, User, Server, Palette, ShieldCheck, BadgeCheck } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -23,16 +23,16 @@ const HomePage = () => {
 
             {/* hero */}
             <Wrapper>
-                <div className="absolute inset-0 dark:bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[linear-gradient(to_right,#161616_1px,transparent_1px),linear-gradient(to_bottom,#161616_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)] -z-10 h-[150vh]" />
+                <div className="absolute inset-0 dark:bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[linear-gradient(to_right,#e5e7eb_1px,transparent_1px),linear-gradient(to_bottom,#e5e7eb_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)] -z-10 h-[150vh]" />
 
                 <Container>
                     <div className="flex flex-col items-center justify-center py-20 h-full">
                         <button className="group relative grid overflow-hidden rounded-full px-4 py-1 shadow-[0_1000px_0_0_hsl(0_0%_20%)_inset] transition-colors duration-200">
                             <span>
-                                <span className="spark mask-gradient absolute inset-0 h-[100%] w-[100%] animate-flip overflow-hidden rounded-full [mask:linear-gradient(white,_transparent_50%)] before:absolute before:aspect-square before:w-[200%] before:rotate-[-90deg] before:animate-rotate before:bg-[conic-gradient(from_0deg,transparent_0_340deg,white_360deg)] before:content-[''] before:[inset:0_auto_auto_50%] before:[translate:-50%_-15%]" />
+                                <span className="spark mask-gradient absolute inset-0 h-[100%] w-[100%] animate-flip overflow-hidden rounded-full [mask:linear-gradient(white,_transparent_50%)] before:absolute before:aspect-square before:w-[200%] before:rotate-[-90deg] before:animate-rotate before:bg-[conic-gradient(from_0deg,transparent_0_340deg,#9333ea_360deg)] before:content-[''] before:[inset:0_auto_auto_50%] before:[translate:-50%_-15%]" />
                             </span>
                             <span className="backdrop absolute inset-[1px] rounded-full bg-neutral-950 transition-colors duration-200 group-hover:bg-neutral-900" />
-                            <span className="h-full w-full blur-md absolute bottom-0 inset-x-0 bg-gradient-to-tr from-primary/40"></span>
+                            <span className="h-full w-full blur-md absolute bottom-0 inset-x-0 bg-gradient-to-tr from-purple-500/40"></span>
                             <span className="z-10 py-0.5 text-sm text-neutral-100 flex items-center justify-center gap-1.5">
                                 <Image src="/icons/sparkles-dark.svg" alt="✨" width={24} height={24} className="w-4 h-4" />
                                 Introducing KYCSync
@@ -41,18 +41,18 @@ const HomePage = () => {
                         </button>
 
                         <div className="flex flex-col items-center mt-8 max-w-3xl w-11/12 md:w-full">
-                            <h1 className="text-4xl md:text-6xl lg:textxl md:!leading-snug font-semibold text-center bg-clip-text bg-gradient-to-b from-gray-50 to-gray-50 text-transparent">
+                            <h1 className="text-4xl md:text-6xl lg:textxl md:!leading-snug font-semibold text-center bg-clip-text bg-gradient-to-b from-gray-900 to-gray-800 text-transparent">
                             Advanced KYC/AML Compliance Solution
                             </h1>
-                            <p className="text-base md:text-lg text-foreground/80 mt-6 text-center">
+                            <p className="text-base md:text-lg text-gray-800 mt-6 text-center">
                             Screen your customers with speed and accuracy in an increasingly complex regulatory environment.
                             </p>
                             <div className="hidden md:flex relative items-center justify-center mt-8 md:mt-12 w-full">
-                                <Link href="#" className="flex items-center justify-center w-max rounded-full border-t border-foreground/30 bg-white/20 backdrop-blur-lg px-2 py-1 md:py-2 gap-2 md:gap-8 shadow-3xl shadow-background/40 cursor-pointer select-none">
+                                <Link href="#" className="flex items-center justify-center w-max rounded-full border-t border-purple-500/30 bg-black/20 cursor-pointer select-none">
                                     <p className="text-foreground text-sm text-center md:text-base font-medium pl-4 pr-4 lg:pr-0">
                                         ✨ {"  "} Secure Your Business with KYCSync
                                     </p>
-                                    <Button size="sm" className="rounded-full hidden lg:flex border border-foreground/20">
+                                    <Button size="sm" className="rounded-full hidden lg:flex border border-purple-500/20 bg-purple-500 hover:bg-purple-600 text-white">
                                         Get Started
                                         <ArrowRight className="w-4 h-4 ml-1" />
                                     </Button>
@@ -90,7 +90,7 @@ const HomePage = () => {
                                 Secure Your Business with KYCSync
                             </p>
                             <Button variant="white" className="mt-6" asChild>
-                                <Link href="/sign-in">
+                                <Link href="/sign-in" className="bg-purple-500 hover:bg-purple-600 text-white">
                                 Get Started
                                 <ArrowRight className="w-4 h-4 ml-2" />
                                 </Link>
@@ -115,7 +115,7 @@ const HomePage = () => {
                         <div className="flex flex-col gap-6 items-center md:items-end">
                             {aboutStats.map((stat) => (
                                 <div key={stat.label} className="bg-muted rounded-lg px-8 py-6 text-center shadow-md">
-                                    <div className="text-3xl font-bold text-primary">{stat.value}</div>
+                                    <div className="text-3xl font-bold text-purple-500">{stat.value}</div>
                                     <div className="text-muted-foreground mt-2">{stat.label}</div>
                                 </div>
                             ))}
@@ -137,14 +137,16 @@ const HomePage = () => {
                     <p className="text-muted-foreground mt-6">Our comprehensive solution offers everything you need for regulatory compliance</p>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
                         {keyFeatures.map((feature) => (
-                            <div key={feature.title} className="bg-muted rounded-lg p-8 shadow-md flex flex-col items-start">
-                                {feature.icon === Icons.bolt && <Bolt className="w-8 h-8 text-primary mb-4" />}
-                                {feature.icon === Icons.database && <Database className="w-8 h-8 text-primary mb-4" />}
-                                {feature.icon === Icons.bell && <Bell className="w-8 h-8 text-primary mb-4" />}
-                                {feature.icon === Icons.search && <Search className="w-8 h-8 text-primary mb-4" />}
-                                {feature.icon === Icons.monitor && <Monitor className="w-8 h-8 text-primary mb-4" />}
-                                {feature.icon === Icons.lock && <Lock className="w-8 h-8 text-primary mb-4" />}
-                                <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
+                            <div key={feature.title} className="bg-muted rounded-lg p-8 shadow-md">
+                                <div className="flex items-center gap-4 mb-4">
+                                    {feature.title === "Seal Verification" && <BadgeCheck className="w-8 h-8 text-purple-500" />}
+                                    {feature.title === "Risk Assessment" && <Shield className="w-8 h-8 text-purple-500" />}
+                                    {feature.title === "Ongoing Monitoring" && <Bell className="w-8 h-8 text-purple-500" />}
+                                    {feature.title === "Global Database Screening" && <Database className="w-8 h-8 text-purple-500" />}
+                                    {feature.title === "Digital Onboarding" && <Monitor className="w-8 h-8 text-purple-500" />}
+                                    {feature.title === "Secure Data Management" && <Lock className="w-8 h-8 text-purple-500" />}
+                                    <h3 className="text-lg font-semibold">{feature.title}</h3>
+                                </div>
                                 <p className="text-muted-foreground">{feature.info}</p>
                             </div>
                         ))}
@@ -189,12 +191,14 @@ const HomePage = () => {
                     <p className="text-muted-foreground mt-6">Stay ahead of regulatory compliance with our diverse solutions</p>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
                         {solutions.map((solution) => (
-                            <div key={solution.title} className="bg-muted rounded-lg p-8 shadow-md flex flex-col items-start">
-                                {solution.icon === Icons.user && <User className="w-8 h-8 text-primary mb-4" />}
-                                {solution.icon === Icons.server && <Server className="w-8 h-8 text-primary mb-4" />}
-                                {solution.icon === Icons.palette && <Palette className="w-8 h-8 text-primary mb-4" />}
-                                {solution.icon === Icons.shield && <ShieldCheck className="w-8 h-8 text-primary mb-4" />}
-                                <h3 className="text-lg font-semibold mb-2">{solution.title}</h3>
+                            <div key={solution.title} className="bg-muted rounded-lg p-8 shadow-md">
+                                <div className="flex items-center gap-4 mb-4">
+                                    {solution.icon === Icons.user && <User className="w-8 h-8 text-purple-500" />}
+                                    {solution.icon === Icons.server && <Server className="w-8 h-8 text-purple-500" />}
+                                    {solution.icon === Icons.palette && <Palette className="w-8 h-8 text-purple-500" />}
+                                    {solution.icon === Icons.shield && <ShieldCheck className="w-8 h-8 text-purple-500" />}
+                                    <h3 className="text-lg font-semibold">{solution.title}</h3>
+                                </div>
                                 <p className="text-muted-foreground">{solution.info}</p>
                             </div>
                         ))}
@@ -229,7 +233,7 @@ const HomePage = () => {
                             <Card
                                 key={card.title}
                                 className={cn("flex flex-col w-full border-neutral-700",
-                                    card.title === "Unlimited Saas" && "border-2 border-primary"
+                                    card.title === "Unlimited Saas" && "border-2 border-purple-500"
                                 )}
                             >
                                 <CardHeader className="border-b border-border">
@@ -246,7 +250,7 @@ const HomePage = () => {
                                 <CardContent className="pt-6 space-y-3">
                                     {card.features.map((feature) => (
                                         <div key={feature} className="flex items-center gap-2">
-                                            <Zap className="w-4 h-4 fill-primary text-primary" />
+                                            <Zap className="w-4 h-4 fill-purple-500 text-purple-500" />
                                             <p>{feature}</p>
                                         </div>
                                     ))}
@@ -255,7 +259,7 @@ const HomePage = () => {
                                     <Link
                                         href="#"
                                         className={cn(
-                                            "w-full text-center text-primary-foreground bg-primary p-2 rounded-md text-sm font-medium",
+                                            "w-full text-center text-primary-foreground bg-purple-500 hover:bg-purple-600 p-2 rounded-md text-sm font-medium",
                                             card.title !== "Unlimited Saas" && "!bg-foreground !text-background"
                                         )}
                                     >
@@ -344,7 +348,7 @@ const HomePage = () => {
                 
                 <Container className="relative z-[999999]">
                     <div className="flex items-center justify-center w-full -mt-40">
-                        <div className="flex flex-col md:flex-row items-start md:items-center justify-start md:justify-between w-full px-4 md:px-8 rounded-lg lg:rounded-2xl border border-border/80 py-4 md:py-8">
+                        <div className="flex flex-col md:flex-row items-start md:items-center justify-start md:justify-between w-full px-4 md:px-8 rounded-lg lg:rounded-2xl border border-purple-500/80 py-4 md:py-8">
                             <div className="flex flex-col items-start gap-4 w-full">
                                 <h4 className="text-xl md:text-2xl font-semibold">
                                     Join our newsletter
@@ -359,9 +363,9 @@ const HomePage = () => {
                                         required
                                         type="email"
                                         placeholder="Enter your email"
-                                        className="focus-visible:ring-0 focus-visible:ring-transparent focus-visible:border-primary duration-300 w-full"
+                                        className="focus-visible:ring-0 focus-visible:ring-transparent focus-visible:border-purple-500 duration-300 w-full"
                                     />
-                                    <Button type="submit" size="sm" variant="secondary" className="w-full md:w-max">
+                                    <Button type="submit" size="sm" variant="secondary" className="w-full md:w-max bg-purple-500 hover:bg-purple-600 text-white">
                                         Subscribe
                                     </Button>
                                 </form>
@@ -395,12 +399,12 @@ const HomePage = () => {
                     <div className="flex flex-col md:flex-row gap-12 mt-10 w-full">
                         <div className="flex-1 flex flex-col gap-8">
                             <div className="bg-muted rounded-lg p-8 shadow-md flex flex-col items-start">
-                                <Mail className="w-8 h-8 text-primary mb-2" />
+                                <Mail className="w-8 h-8 text-purple-500 mb-2" />
                                 <h3 className="text-lg font-semibold mb-2">Email</h3>
                                 <p className="text-muted-foreground">{contactInfo.email}</p>
                             </div>
                             <div className="bg-muted rounded-lg p-8 shadow-md flex flex-col items-start">
-                                <MapPin className="w-8 h-8 text-primary mb-2" />
+                                <MapPin className="w-8 h-8 text-purple-500 mb-2" />
                                 <h3 className="text-lg font-semibold mb-2">Address</h3>
                                 <p className="text-muted-foreground">{contactInfo.address}</p>
                             </div>
@@ -410,7 +414,7 @@ const HomePage = () => {
                             <Input type="text" placeholder="Subject" required />
                             <Input type="file" />
                             <textarea className="rounded-md border border-border p-2 min-h-[100px]" placeholder="Type your message" required />
-                            <Button type="submit" className="mt-2">Send Message</Button>
+                            <Button type="submit" className="mt-2 bg-purple-500 hover:bg-purple-600">Send Message</Button>
                         </form>
                     </div>
                 </Container>
