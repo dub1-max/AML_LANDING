@@ -31,14 +31,14 @@ const HomePage = () => {
                 <Container>
                     <div className="flex flex-col items-center justify-center py-20 h-full">
                         <Link href="https://kycsync.com/login" passHref legacyBehavior>
-                            <button className="group relative grid overflow-hidden rounded-full px-4 py-1 shadow-[0_1000px_0_0_hsl(0_0%_20%)_inset] transition-colors duration-200">
+                            <button className="group relative grid overflow-hidden rounded-full px-10 py-5 shadow-[0_1000px_0_0_hsl(0_0%_20%)_inset] transition-colors duration-200">
                                 <span>
                                     <span className="spark mask-gradient absolute inset-0 h-[100%] w-[100%] animate-flip overflow-hidden rounded-full [mask:linear-gradient(white,_transparent_50%)] before:absolute before:aspect-square before:w-[200%] before:rotate-[-90deg] before:animate-rotate before:bg-[conic-gradient(from_0deg,transparent_0_340deg,#9333ea_360deg)] before:content-[''] before:[inset:0_auto_auto_50%] before:[translate:-50%_-15%]" />
                                 </span>
                                 <span className="backdrop absolute inset-[1px] rounded-full bg-neutral-950 transition-colors duration-200 group-hover:bg-neutral-900" />
                                 <span className="h-full w-full blur-md absolute bottom-0 inset-x-0 bg-gradient-to-tr from-purple-500/40"></span>
                                 <span className="z-10 py-0.5 text-sm text-neutral-100 flex items-center justify-center gap-1.5">
-                                    <Image src="/icons/sparkles-dark.svg" alt="✨" width={24} height={24} className="w-4 h-4" />
+                                    <Image src="/icons/sparkles-dark.svg" alt="✨" width={150} height={150} className="w-4 h-4" />
                                      Go To KycSync
                                     <ChevronRight className="w-4 h-4" />
                                 </span>
@@ -49,17 +49,17 @@ const HomePage = () => {
                             <h1 className="text-4xl md:text-6xl lg:textxl md:!leading-snug font-semibold text-center bg-clip-text bg-gradient-to-b from-gray-900 to-gray-800 text-transparent">
                             Advanced KYC/AML Compliance Solution
                             </h1>
-                            <p className="text-base md:text-lg text-gray-800 mt-6 text-center">
+                            <p className="text-base md:text-lg text-gray-500 mt-6 text-center">
                             Screen your customers with speed and accuracy in an increasingly complex regulatory environment.
                             </p>
-                            <div className="hidden md:flex relative items-center justify-center mt-10 md:mt-500 w-full">
-                                <Link href="#" className="flex items-center justify-center w-max rounded-full border-t border-purple-500/30 bg-black/20 cursor-pointer select-none">
-                                    <p className="text-foreground text-sm text-center md:text-base font-medium pl-4 pr-4 lg:pr-0">
-                                        ✨ {"  "} Secure Your Business with KYCSync
+                            <div className="hidden md:flex relative items-center justify-center mt-10 md:mt-500 w-full min-h-[70px]">
+                                <Link href="https://kycsync.com/login" className="flex items-center justify-center w-max rounded-full border-t border-purple-500/30 bg-black/20 cursor-pointer select-none px-6 py-2 text-base">
+                                    <p className="text-foreground text-base text-center md:text-lg font-semibold pl-2 pr-4 lg:pr-0">
+                                        ✨ {"  " } Secure Your Business with KYCSync
                                     </p>
-                                    <Button size="sm" className="rounded-full hidden lg:flex border border-purple-500/20 bg-purple-500 hover:bg-purple-600 text-white">
+                                    <Button size="default" className="rounded-full hidden lg:flex border border-purple-5 bg-purple-500 hover:bg-purple-600 text-white px-6 py-2 text-base">
                                         Get Started
-                                        <ArrowRight className="w-4 h-4 ml-1" />
+                                        <ArrowRight className="w-5 h-5 ml-2" />
                                     </Button>
                                 </Link>
                             </div>
@@ -95,7 +95,7 @@ const HomePage = () => {
                                 Secure Your Business with KYCSync
                             </p>
                             <Button variant="white" className="mt-6" asChild>
-                                <Link href="/sign-in" className="bg-purple-500 hover:bg-purple-600 text-white">
+                                <Link href="https://kycsync.com/login" className="bg-purple-500 hover:bg-purple-600 text-white">
                                 Get Started
                                 <ArrowRight className="w-4 h-4 ml-2" />
                                 </Link>
