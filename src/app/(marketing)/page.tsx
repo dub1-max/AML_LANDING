@@ -30,7 +30,7 @@ const HomePage = () => {
 
                 <Container>
                     <div className="flex flex-col items-center justify-center py-20 h-full">
-                        <Link href="https://kycsync.com/login" passHref legacyBehavior>
+                        <Link href="https://app.kycsync.com/login" passHref legacyBehavior>
                             <button className="group relative grid overflow-hidden rounded-full px-10 py-5 shadow-[0_1000px_0_0_hsl(0_0%_20%)_inset] transition-colors duration-200">
                                 <span>
                                     <span className="spark mask-gradient absolute inset-0 h-[100%] w-[100%] animate-flip overflow-hidden rounded-full [mask:linear-gradient(white,_transparent_50%)] before:absolute before:aspect-square before:w-[200%] before:rotate-[-90deg] before:animate-rotate before:bg-[conic-gradient(from_0deg,transparent_0_340deg,#9333ea_360deg)] before:content-[''] before:[inset:0_auto_auto_50%] before:[translate:-50%_-15%]" />
@@ -53,7 +53,7 @@ const HomePage = () => {
                             Screen your customers with speed and accuracy in an increasingly complex regulatory environment.
                             </p>
                             <div className="hidden md:flex relative items-center justify-center mt-10 md:mt-500 w-full min-h-[70px]">
-                                <Link href="https://kycsync.com/login" className="flex items-center justify-center w-max rounded-full border-t border-purple-500/30 bg-black/20 cursor-pointer select-none px-6 py-2 text-base">
+                                <Link href="https://app.kycsync.com/login" className="flex items-center justify-center w-max rounded-full border-t border-purple-500/30 bg-black/20 cursor-pointer select-none px-6 py-2 text-base">
                                     <p className="text-foreground text-base text-center md:text-lg font-semibold pl-2 pr-4 lg:pr-0">
                                         ✨ {"  " } Secure Your Business with KYCSync
                                     </p>
@@ -95,7 +95,7 @@ const HomePage = () => {
                                 Secure Your Business with KYCSync
                             </p>
                             <Button variant="white" className="mt-6" asChild>
-                                <Link href="https://kycsync.com/login" className="bg-purple-500 hover:bg-purple-600 text-white">
+                                <Link href="https://app.kycsync.com/login" className="bg-purple-500 hover:bg-purple-600 text-white">
                                 Get Started
                                 <ArrowRight className="w-4 h-4 ml-2" />
                                 </Link>
