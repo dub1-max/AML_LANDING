@@ -232,6 +232,6 @@ export const solutions = [
 ];
 
 export const contactInfo = {
-    email: "support.kycsync@gmail.com",
+    email: "support@kycsync.com",
     address: "Dubai, United Arab Emirates",
 };
