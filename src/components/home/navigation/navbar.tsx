@@ -1,5 +1,6 @@
 import { Container, Icons } from "@/components";
 import { buttonVariants } from "@/components/ui/button";
+import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = async () => {
@@ -9,9 +10,9 @@ const Navbar = async () => {
                 <div className="flex items-center justify-between h-full mx-auto md:max-w-screen-xl">
                     <div className="flex items-start">
                         <Link href="/" className="flex items-center gap-2">
-                            <Icons.logo className="w-8 h-8" />
+                            <img src='/logo.png' className="w-8 h-8" alt="icon" />
                             <span className="text-lg font-medium">
-                                AML
+                                KycSync
                             </span>
                         </Link>
                     </div>

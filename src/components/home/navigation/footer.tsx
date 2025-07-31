@@ -13,7 +13,7 @@ const Footer = () => {
 
                 <div className="flex flex-col items-start justify-start md:max-w-[200px]">
                     <div className="flex items-start">
-                        <Icons.logo className="w-7 h-7" />
+                        <img src="/logo.png" className="w-7 h-7" />
                     </div>
                     <p className="text-muted-foreground mt-4 text-sm text-start">
                         Build beautiful, functional websites, without writing code
@@ -129,7 +129,7 @@ const Footer = () => {
 
             <div className="mt-8 border-t border-border/40 pt-4 md:pt-8 md:flex md:items-center md:justify-between w-full">
                 <p className="text-sm text-muted-foreground mt-8 md:mt-0">
-                    &copy; {new Date().getFullYear()} AML INC. All rights reserved.
+                    &copy; {new Date().getFullYear()} KycSync INC. All rights reserved.
                 </p>
             </div>
 
